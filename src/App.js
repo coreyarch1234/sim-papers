@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { getSentencePermutationsVector } from "./utils/getSentencePermutationsVector";
+import { getRelevantPapers } from "./utils/getRelevantPapers";
 
 class App extends Component {
   render() {
+    // const vec = getSentencePermutationsVector("Biomedical applications of Raman and infrared spectroscopy to diagnose tissues")
+    // console.log(vec)
+    console.log(getRelevantPapers())
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Hello</p>
       </div>
     );
   }
